@@ -75,10 +75,10 @@
             <tbody>
                <tr>
                   <td>9826-231</td>
-                  <td>${carDetail.make} ${carDetail.model}</td>
+                  <td>${admin.make} ${admin.model}</td>
                   <td>2 / 0</td>
                   <td>Fork/Performance/Part</td>
-                  <td><span>$</span>${carDetail.price}</td>
+                  <td><span>$</span>${admin.price}</td>
                </tr>
                <tr>
                   <td>6178-872</td>
