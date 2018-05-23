@@ -30,6 +30,7 @@ public class PlaceOrderServler extends HttpServlet {
 		ArrayList<Car> cars  = (ArrayList<Car>)session.getAttribute("car");
 		
 		ArrayList<Car> admin  = (ArrayList<Car>)session.getAttribute("admin");
+	
 		
 		if(admin == null) {
 			
@@ -38,13 +39,13 @@ public class PlaceOrderServler extends HttpServlet {
 		
 		int vinNumber = Integer.parseInt(request.getParameter("vinNumber"));
 		Car carDetails=null;
-		for(Car car: cars) {
+		for(Car car: cars) {  //for (int i = 0; i < carArrayList.size(); i++)
 			if(car.getVinNumber()==vinNumber){
 				
 				//carDetails=car;
 				//cars.setStatus(false);
 				
-			admin.add(car);	
+			admin.add(car);
 			cars.remove(car);
 				break;
 			}

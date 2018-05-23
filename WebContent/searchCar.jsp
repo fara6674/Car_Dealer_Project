@@ -1,7 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
- <%@page import="com.user.CarList"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <title>K & F Express</title>
@@ -30,7 +29,7 @@
       padding: 25px;
     }
     
-     .footer {
+    .footer {
    position: fixed;
    left: 0;
    bottom: 0;
@@ -78,23 +77,89 @@ function googleTranslateElementInit() {
       </ul>
     </div>
   </div>
-  <% CarList obj = new CarList();
-  session.setAttribute("cars",obj.createCar());
-  System.out.print(obj.createCar());
-  %>
+  
 </nav>
+<br><br>
 
-   <div>
+
+<body>
+
+
+
+<div class="container">
+	<div class="row">
+        <div class="col-md-6">
+    		<h2>Custom search field</h2>
+            <div id="custom-search-input">
+                <div class="input-group col-md-12">
+                <form method="get" action="SearchServlet">
+                    <input type="text" class="form-control input-lg" placeholder="Search by Make, Model, Color or Year" name="make" />
+                    <span class="input-group-btn">
+                         <button class="btn btn-info btn-lg" type="submit">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                      
+                        </form>
+         
+                    </span>
+                </div>
+            </div>
+        </div>
         
-        <div ><img src="https://av2j93m4ez061f8usrdcx60m-wpengine.netdna-ssl.com/engineer/wp-content/uploads/sites/10/2016/07/lamborghini-605334_1920.jpg" class="img-responsive" style="background-size: cover; background-position: center center; max-width:100%; max-height: 100% " alt="Image"></div>
+        
+        <div class="row">
+        <div class="col-md-6">
+            <div id="custom-search-input">
+                <div class="input-group col-md-12">
+                    
+                </div>
+            </div>
+        </div>
+        
+        
+        
+	</div>
+</div>
+                                   <!--  start loop -->
 
-      </div>
+                     	<c:forEach var="car" items="${maker}">
+                     	
+                       	
 
-       <div style="padding-bottom: 80px">
+	<div class="col-sm-4">
+			<div class="font-weight-bold">
       
-      </div>
     
-
+ <div class="panel panel-primary">
+      
+				<div class="panel-heading">
+			<b> <c:out value="${car.make} ${car.model}" /> </div> 	
+				<div class="panel-body">
+				<c:out value="${car.year}" />
+				<c:out value="${car.color}" />
+				<c:out value="${car.mileage}"/>
+				<c:out value="${car.vinNumber}"/>
+				<div></div>
+				   </div></b>
+					<a href="DetailsServlet?vinNumber=${car.vinNumber}"><img src="${car.image}" width="360px" height="360px"></a>
+				</div>
+				<div class="btn btn-danger"><span>$</span>${car.price }</div>
+			</div>
+			<div class="">
+				<a href="BuyServlet?vinNumber=${carDetail.vinNumber}"><button class="btn btn-lg btn btn-danger"  role="button">Buy Now </button></a>	
+				
+				<a href="BuyServlet?vinNumber=${carDetail.vinNumber}"><button class="btn btn-lg btn btn-danger"  role="button">Buy Now </button></a>	
+				
+				
+				<a href="DetailsServlet?vinNumber=${car.vinNumber}"><button class="btn btn-lg btn btn-danger"  role="button">See Details </button></a>
+				
+			</div>
+			<br>
+		</div>
+		
+	</c:forEach>
+	
+	<!--  end loop -->
 
 </body>
 

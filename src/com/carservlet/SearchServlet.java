@@ -13,34 +13,37 @@ import javax.servlet.http.HttpSession;
 import com.user.Car;
 
 
-@WebServlet("/BuyServlet")
-public class BuyServlet extends HttpServlet {
+@WebServlet("/SearchServlet")
+public class SearchServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
    
-    public BuyServlet() {
-    
+    public SearchServlet() {
+       
     }
 
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	
+		
+		
 		HttpSession session =request.getSession(true);
 		ArrayList<Car> cars  = (ArrayList<Car>)session.getAttribute("car");
+		ArrayList<Car> carSearch  = new ArrayList<Car>();
 		
-		int vinNumber = Integer.parseInt(request.getParameter("vinNumber"));
-		Car carDetails=null;
+		String maker2 = request.getParameter("make");
+	//	Car maker=null;
 		for(Car car: cars) {
-			if(car.getVinNumber()==vinNumber){
-				carDetails=car;
-				
-				
+			if(car.getMake().equals(maker2)||car.getModel().equals(maker2)||car.getColor().equals(maker2)||car.getYear().equals(maker2)){
+				carSearch.add(car);
+			  //break;
 			}
 		}
 		
 		
-		session.setAttribute("cart", carDetails);
-		request.getRequestDispatcher("cart.jsp").forward(request, response);
+		session.setAttribute("maker", carSearch);
+		request.getRequestDispatcher("searchCar.jsp").forward(request, response);
+	
+	
 	}
 
 	
