@@ -65,67 +65,6 @@ function googleTranslateElementInit() {
     -->
 
 
-<%-- 
-
-    <div class="col-sm-4">
-      <div class="panel panel-primary">
-        <div class="panel-heading">2018 Nissan Altima</div>
-        <div class="panel-body"><img src="/images/car1.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
-      </div>
-    </div>
-    <div class="col-sm-4"> 
-      <div class="panel panel-primary">
-        <div class="panel-heading">2017 Ferrari 488</div>
-        <div class="panel-body"><img src="image" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
-      </div>
-    </div>
-    <div class="col-sm-4"> 
-      <div class="panel panel-primary">
-        <div class="panel-heading">2019 Toyota Camry</div>
-        <div class="panel-body"><img src="image" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
-      </div>
-    </div>
-  </div>
-</div><br>
-
-<div class="container">    
-  <div class="row">
-    <div class="col-sm-4">
-      <div class="panel panel-primary">
-        <div class="panel-heading">2017 BMW 800i L</div>
-        <div class="panel-body"><img src="image" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
-      </div>
-    </div>
-    <div class="col-sm-4"> 
-      <div class="panel panel-primary">
-        <div class="panel-heading">2018 Lambargini 999 </div>
-        <div class="panel-body"><img src=<%car. %> class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
-      </div>
-    </div>
-
- <!--  <div class="col-sm-4"> 
-      <div class="panel panel-primary">
-        <div class="panel-heading">BLACK FRIDAY DEAL</div>
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
-      </div>
-    </div> -->
-
-    <div class="col-sm-4"> 
-      <div class="panel panel-primary">
-        <div class="panel-heading">2019 Honda Accord </div>
-        <div class="panel-body"><img src="image" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
-      </div>
-    </div>
-  </div>
-</div><br><br>
- --%>
 
 
 <%-- <%java.util.ArrayList<Car> cars = (ArrayList<Car>)session.getAttribute("cars"); %> --%>
@@ -136,7 +75,7 @@ function googleTranslateElementInit() {
 <source src="https://3a73912591e33a34c7ec-0b2c97842f44191203c9b45228f673bc.ssl.cf1.rackcdn.com/frankletaacura/LetaAcura.mp4" type="video/mp4"><source src="https://3a73912591e33a34c7ec-0b2c97842f44191203c9b45228f673bc.ssl.cf1.rackcdn.com/frankletaacura/LetaAcura.webm" type="video/webm"></video></div>
 
 
-<br><br><br><br><br><br> -->
+<br><br> -->
 
 
 
@@ -174,6 +113,7 @@ function googleTranslateElementInit() {
 				
 				<a href="DetailsServlet?vinNumber=${car.vinNumber}"><button class="btn btn-lg btn btn-danger"  role="button">See Details </button></a>
 				
+				
 			</div>
 			<br>
 		</div>
@@ -182,8 +122,9 @@ function googleTranslateElementInit() {
 </div>
 </div>
 
-<footer class="container-fluid text-center">
-  <p class="m-0 text-center text-white">Copyright &copy; K & F Express 2018</p>
+<footer class="footer">
+
+  <p>Copyright &copy; K & F Express, LLC 2018</p>
  
 </footer>
 

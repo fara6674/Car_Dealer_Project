@@ -82,11 +82,23 @@ function googleTranslateElementInit() {
 				<div class="btn btn-danger"><span>$</span>${carDetail.price}</div>
 			</div>
 			<div class="">
-				
-				
+			
+			<br></br>
+				<form action="BidServlet" method="get">
+				<c:if test="${carDetail.getcarAge()}">
+				<div>
+				<input type="text" name="bidprice">
+				<c:out value="${bidStatus}"></c:out>
+				<input type = "hidden" name = "vinNumber" value="${carDetail.vinNumber}">
+				<a href="DetailsServlet?vinNumber=${carDetail.vinNumber}"><button class="btn btn-lg btn btn-danger"  role="button">Bid Offer </button></a>
+				</div>
+				</c:if>
+				</form>
+					<br></br>
 			<a href="BuyServlet?vinNumber=${carDetail.vinNumber}"><button class="btn btn-lg btn btn-danger"  role="button">Buy Now </button></a>	
 				
 			</div>
+			
 			<br>
 		</div>
 

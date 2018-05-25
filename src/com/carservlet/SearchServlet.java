@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import com.user.Car;
+import com.user.CarList;
 
 
 @WebServlet("/SearchServlet")
@@ -27,7 +28,7 @@ public class SearchServlet extends HttpServlet {
 		
 		
 		HttpSession session =request.getSession(true);
-		ArrayList<Car> cars  = (ArrayList<Car>)session.getAttribute("car");
+		ArrayList<Car> cars  = new CarList().createCar();
 		ArrayList<Car> carSearch  = new ArrayList<Car>();
 		
 		String maker2 = request.getParameter("make");
