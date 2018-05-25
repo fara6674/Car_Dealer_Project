@@ -56,7 +56,7 @@ function googleTranslateElementInit() {
 </nav>
 
           
-        <div ><img src="https://av2j93m4ez061f8usrdcx60m-wpengine.netdna-ssl.com/engineer/wp-content/uploads/sites/10/2016/07/lamborghini-605334_1920.jpg" class="img-responsive" style="background-size: cover; background-position: center center; max-width: 100%; max-height: 90% " alt="Image"></div>
+  <div ><img src="https://av2j93m4ez061f8usrdcx60m-wpengine.netdna-ssl.com/engineer/wp-content/uploads/sites/10/2016/07/lamborghini-605334_1920.jpg" class="img-responsive" style="background-size: cover; background-position: center center; max-width: 100%; max-height: 90% " alt="Image"></div>
 
    
 </body>

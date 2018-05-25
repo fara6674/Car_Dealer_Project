@@ -1,6 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-    
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@page import="com.user.Car"%>
 <%@page import="com.carservlet.CarServlet"%>
@@ -60,9 +58,20 @@ function googleTranslateElementInit() {
   </div>
   
 </nav>
+</head>
 
-<div style="position: absolute; z-index: -1; top: 0px; left: 0px; bottom: 0px; right: 0px; overflow: hidden; background-size: cover; background-color: transparent; background-repeat: no-repeat; background-position: 50% 50%; background-image: none;"><video autoplay="" loop="" muted="" style="margin: auto; position: absolute; z-index: -1; top: 50%; left: 50%; transform: translate(-50%, -50%); visibility: visible; opacity: 1; width: auto; height: 702px;">
-<source src="https://3a73912591e33a34c7ec-0b2c97842f44191203c9b45228f673bc.ssl.cf1.rackcdn.com/frankletaacura/LetaAcura.mp4" type="video/mp4"><source src="https://3a73912591e33a34c7ec-0b2c97842f44191203c9b45228f673bc.ssl.cf1.rackcdn.com/frankletaacura/LetaAcura.webm" type="video/webm"></video></div>
+<body>
+
+
+
+<div>
+
+<video width=100% height=100% autoplay="" loop="" muted="">
+
+<source src="https://3a73912591e33a34c7ec-0b2c97842f44191203c9b45228f673bc.ssl.cf1.rackcdn.com/frankletaacura/LetaAcura.mp4" type="video/mp4">
+
+</video>
+</div> 
 
 <br><br>
 <!-- <link rel="stylesheet" type="text/css" href="./styles/css">
@@ -129,9 +138,8 @@ function googleTranslateElementInit() {
 </div> -->
  
 
- <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
- <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
  <br><br>
+ 
  
 <div class="page-bd" data-page-body="">
 <div class=" ddc-content content-default" data-widget-name="content-default" data-widget-id="content1">
