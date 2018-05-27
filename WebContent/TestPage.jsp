@@ -20,9 +20,9 @@
     <link rel="stylesheet" type="text/css" href="./styles/font-face-default.css">
      <link rel="stylesheet" type="text/css" href="./styles/widget.css">
  
+</head>
 
-
-
+<body>
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -58,84 +58,22 @@ function googleTranslateElementInit() {
   </div>
   
 </nav>
-</head>
+<!-- </head> -->
 
-<body>
+
 
 
 
 <div>
 
-<video width=100% height=100% autoplay="" loop="" muted="">
+<video width=100% height=100% autoplay="" loop="" muted="" >
 
-<source src="https://3a73912591e33a34c7ec-0b2c97842f44191203c9b45228f673bc.ssl.cf1.rackcdn.com/frankletaacura/LetaAcura.mp4" type="video/mp4">
+<source src=".\\images\\Acura.mp4" type="video/mp4">
 
 </video>
 </div> 
 
 <br><br>
-<!-- <link rel="stylesheet" type="text/css" href="./styles/css">
-
- -->
- 
-
- 
-<!--  <script type="text/javascript" src="./JS/js.js" ></script> -->
- 
-
-
-
-<!-- <div class="row">
-
-    <div class="col-lg-12">
-        <h1 class="page-header">Thumbnail Gallery</h1>
-    
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice" data-caption="And if there is money left, my girlfriend will receive this car" data-image=".\\images\\car3.jpg" data-target="#image-gallery">
-                <img class="img-responsive" src=".\\images\\car3.jpg" alt="Another alt text">
-            </a>
-        </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice" data-caption="And if there is money left, my girlfriend will receive this car" data-image=".\\images\\car3.jpg" data-target="#image-gallery">
-                <img class="img-responsive" src=".\\images\\car3.jpg" alt="Another alt text">
-            </a>
-        </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice" data-caption="And if there is money left, my girlfriend will receive this car" data-image=".\\images\\car3.jpg" data-target="#image-gallery">
-                <img class="img-responsive" src=".\\images\\car3.jpg" alt="Another alt text">
-            </a>
-        </div>
-</div>
-
-
-<div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="image-gallery-title"></h4>
-            </div>
-            <div class="modal-body">
-                <img id="image-gallery-image" class="img-responsive" src="">
-            </div>
-            <div class="modal-footer">
-
-                <div class="col-md-2">
-                    <button type="button" class="btn btn-primary" id="show-previous-image">Previous</button>
-                </div>
-
-                <div class="col-md-8 text-justify" id="image-gallery-caption">
-                    This text will be overwritten by jQuery
-                </div>
-
-                <div class="col-md-2">
-                    <button type="button" id="show-next-image" class="btn btn-default">Next</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div> -->
  
 
  <br><br>
@@ -191,7 +129,7 @@ View Details
 <div class="hproduct [content] auto" data-internetprice="MTU5OTUuMA==" data-msrp="MC4w" data-vin="WBAXH5C57CDW02464" data-make="BMW" data-model="528i xDrive" data-year="2012" data-bodystyle="Sedan" data-trim="528i xDrive" data-exteriorcolor="Dark Graphite II" data-index-position="2" data-type="used">
 <div>
 <div class="media">
-<a href="/used/BMW/2012-BMW-528i+xDrive-304f6dfb0a0e0a175837ce58e8b78dba.htm">
+<a href="">
 <img src=".\\images\\car3.jpg" alt="2012 BMW 528i xDrive 528i xDrive Sedan" title="2012 BMW 528i xDrive 528i xDrive Sedan" class="photo thumb">
 </a>
 </div>
@@ -221,6 +159,7 @@ View Details
  
 
 </body>
+
 <footer class="footer">
 
   <p>Copyright &copy; K & F Express, LLC 2018</p>
