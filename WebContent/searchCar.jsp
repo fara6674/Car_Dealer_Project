@@ -11,6 +11,12 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="./styles/styles.css">
   
+   <style>
+ body {
+    background-color: #e6f7ff	;
+}
+</style>
+  
 </head>
 <body>
 
@@ -60,19 +66,21 @@ function googleTranslateElementInit() {
 <div class="container">
 	<div class="row">
         <div class="col-md-6">
-    		<h2>Custom search field</h2>
+    		<h2><em>Find your dream car..</em></h2>
             <div id="custom-search-input">
                 <div class="input-group col-md-12">
+                
                 <form method="get" action="SearchServlet">
+                
                     <input type="text" class="form-control input-lg" placeholder="Search by Make, Model, Color or Year" name="make" />
+                   
+                        </form>
+         
                     <span class="input-group-btn">
                          <button class="btn btn-info btn-lg" type="submit">
                             <i class="glyphicon glyphicon-search"></i>
                         </button>
-                      
-                        </form>
-         
-                    </span>
+                       </span>
                 </div>
             </div>
         </div>
@@ -91,6 +99,8 @@ function googleTranslateElementInit() {
         
 	</div>
 </div>
+
+<br><br><br>
                                    <!--  start loop -->
 
                      	<c:forEach var="car" items="${maker}">
@@ -128,7 +138,11 @@ function googleTranslateElementInit() {
 			<br>
 		</div>
 		
+		
+		
 	</c:forEach>
+	
+	
 	
 	<!--  end loop -->
 

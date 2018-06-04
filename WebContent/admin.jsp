@@ -12,6 +12,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  <link rel="stylesheet" type="text/css" href="./styles/styles.css">
  
+ 
 </head>
 <body>
 
@@ -133,9 +134,13 @@ function googleTranslateElementInit() {
       </div>
    </div>
  </div>
-
+ <style>
+ body {
+    background-color: #e6f7ff	;
+}
+</style>
 </body>
-<footer class="container-fluid text-center">
+<footer class="footer">
   <p class="m-0 text-center text-white">Copyright &copy; K & F Express 2018</p>
  
 </footer>

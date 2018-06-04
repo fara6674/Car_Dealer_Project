@@ -14,6 +14,30 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  <link rel="stylesheet" type="text/css" href="./styles/styles.css">
  
+ <style>
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: middle; 
+    width: 40.33%;
+    padding: 5px;
+    
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body {
+    background-color: black;
+}
+</style>
+ 
 </head>
 <body>
 
@@ -56,16 +80,6 @@ function googleTranslateElementInit() {
 
 
 
-<!-- https://cdn.cgsociety.org/t/g57/636957/17669180_large.jpg
-   http://wallpapersin4k.net/wp-content/uploads/2016/11/Ferrari-F12-Berlinetta-Car-Front-Wallpaper.jpg
-   http://www.bestdreamcars.com/wallpapers/ferrari/ferrari_red_concept-widescreen_wallpapers.jpg
-   https://wallscloud.net/uploads/cache/1014537310/428134-Kycb-1024x576-MM-90.jpg
-   http://automenu.com.ua/cars/gallery/lamborghini/Lamborghini-Gallardo_LP570-4_Super_Trofeo_Stradale_2012_2.jpg
-   http://shabier.com/images/red-car-wallpaper/red-car-wallpaper-13.jpg
-    -->
-
-
-
 
 <%-- <%java.util.ArrayList<Car> cars = (ArrayList<Car>)session.getAttribute("cars"); %> --%>
 <%-- <%java.util.ArrayList<com.user.Car> cars= (java.util.ArrayList<com.user.Car>)session.getAttribute("cars"); %> --%>
@@ -83,48 +97,32 @@ function googleTranslateElementInit() {
 	</div>
 
 
-<div class="container"> 
-<div class="row">
-	<c:forEach var="car" items="${car}">
-
-
-
-	<div class="col-sm-4">
-			<div class="font-weight-bold">
-      
-    
- <div class="panel panel-primary">
-      
-				<div class="panel-heading">
-			<b> <c:out value="${car.make} ${car.model}" /> </div> 	
-				<div class="panel-body">
-				<c:out value="${car.year}" />
-				<c:out value="${car.color}" />
-				<c:out value="${car.mileage}"/>
-				<c:out value="${car.vinNumber}"/>
-				<div></div>
-				   </div></b>
-					<a href="DetailsServlet?vinNumber=${car.vinNumber}"><img src="${car.image}" width="360px" height="360px"></a>
-				</div>
-				<%-- <div class="btn btn-danger"><span>$</span>${car.price }</div> --%>
-			</div>
-			<div class="">
-				<a href="BuyServlet?vinNumber=${carDetail.vinNumber}"><button class="btn btn-lg btn btn-danger"  role="button">Buy Now </button></a>	
-				
-				<%-- <a href="BuyServlet?vinNumber=${carDetail.vinNumber}"><button class="btn btn-lg btn btn-danger"  role="button">Buy Now </button></a>	
-				 --%>
-				
-				<a href="DetailsServlet?vinNumber=${car.vinNumber}"><button class="btn btn-lg btn btn-danger"  role="button">See Details </button></a>
-				
-				
-			</div>
-			<br>
-		</div>
-	</c:forEach>
+<div class="page-bd" data-page-body="">
 	
-</div>
-</div>
+	<div class="row" align="middle";>
+	<c:forEach var="car" items="${car}">
+  <div class="column" >
+   <a href="DetailsServlet?vinNumber=${car.vinNumber}"> <img src="${car.image}" alt="Fjords" style="width:100%">
+   </a>
+   
+   
+					<h3><em>	<a class="" href="DetailsServlet?vinNumber=${car.vinNumber}"> ${car.make} ${car.model}</a>
+					</em></h3>
+						<div>
+				<a class="btn btn-primary view-link"
+					href="DetailsServlet?vinNumber=${car.vinNumber}"> View Details
+				</a>
+			</div>
+			</div>
+			</c:forEach>
+	</div>
+	
+	
+  </div>
+
+
 <br></br> <br></br>
+</body>
 <footer class="footer">
 
   <p>Copyright &copy; K & F Express, LLC 2018</p>

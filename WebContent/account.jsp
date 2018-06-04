@@ -9,6 +9,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="./styles/styles.css">
   
+
 </head>
 <body>
 
@@ -117,14 +118,19 @@ function googleTranslateElementInit() {
 					
 					<button type="submit" class="btn btn-default">Submit</button>
 				</form>
-				<br><br>
+				<br><br><br><br><br><br>
 				
 		
+	 <style>
+ body {
+    background-color: #e6f7ff	;
+}
+</style>
+
+</body>
 		
-		<footer class="container-fluid text-center">
+		<footer class="footer">
   <p class="m-0 text-center text-white">Copyright &copy; K & F Express 2018</p>
   
-</footer>	
-</body>
-
+</footer>
 </html>

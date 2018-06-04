@@ -12,6 +12,30 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="./styles/styles.css">
   
+   <style>
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: middle; 
+    width: 40.33%;
+    padding: 5px;
+    
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body {
+    background-color: black;
+}
+</style>
+  
 </head>
 <body>
 
@@ -56,27 +80,20 @@ function googleTranslateElementInit() {
 <br><br><br>
 
 
-<div class="container"> 
-<div class="row">
+<div class="page-bd" data-page-body="">
 	
-
-
-
-	<div class="col-sm-4">
-			<div class="font-weight-bold">
+	<div class="row" align="middle";>
       
-
- <div class="panel panel-primary">
-      
-				<div class="panel-heading">
-			<b> <c:out value="${carDetail.make} ${carDetail.model}" /> </div> 	
-				<div class="panel-body">
+<div class="column" >
+ 
+			<c:out value="${carDetail.make} ${carDetail.model}" /> </div> 	
+				
 			Year: 	<c:out value="${carDetail.year}" />
 			Color: 	<c:out value="${carDetail.color}" />
 			Mile: <c:out value="${carDetail.mileage}"/>
 				VIN #<c:out value="${carDetail.vinNumber}"/>
 				<div></div>
-				   </div></b>
+				   </div>
 					<img src="${carDetail.image}" width="400px" height="400px">
 				</div>
 				<div class="btn btn-danger"><span>$</span>${carDetail.price}</div>
@@ -99,13 +116,13 @@ function googleTranslateElementInit() {
 				
 			</div>
 			
-			<br>
-		</div>
-
+<br></br> <br></br>
 	
-</div>
-</div>
 
 </body>
+<footer class="footer">
 
+  <p>Copyright &copy; K & F Express, LLC 2018</p>
+ 
+</footer>
 </html>
