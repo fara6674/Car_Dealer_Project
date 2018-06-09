@@ -82,22 +82,23 @@ function googleTranslateElementInit() {
 
 <div class="page-bd" data-page-body="">
 	
-	<div class="row" align="middle";>
+	<div class="row" align="center";>
       
-<div class="column" >
+
  
-			<c:out value="${carDetail.make} ${carDetail.model}" /> </div> 	
-				
-			Year: 	<c:out value="${carDetail.year}" />
+			<b></b><h4 style="color:red"><c:out  value="${carDetail.make} ${carDetail.model}" /> Year: 	<c:out value="${carDetail.year}" />
 			Color: 	<c:out value="${carDetail.color}" />
 			Mile: <c:out value="${carDetail.mileage}"/>
-				VIN #<c:out value="${carDetail.vinNumber}"/>
+				VIN #<c:out value="${carDetail.vinNumber}"/></h4> </div> 	
+				
+			
 				<div></div>
 				   </div>
-					<img src="${carDetail.image}" width="400px" height="400px">
+				   <div class="column" >
+					<img src="${carDetail.image}" alt="Fjords" style="width:100%">
 				</div>
-				<div class="btn btn-danger"><span>$</span>${carDetail.price}</div>
-			</div>
+				<div class="btn btn-primary view-link"><span>$</span>${carDetail.price}</div>
+			
 			<div class="">
 			
 			<br></br>
@@ -107,12 +108,14 @@ function googleTranslateElementInit() {
 				<input type="text" name="bidprice">
 				<c:out value="${bidStatus}"></c:out>
 				<input type = "hidden" name = "vinNumber" value="${carDetail.vinNumber}">
-				<a href="DetailsServlet?vinNumber=${carDetail.vinNumber}"><button class="btn btn-lg btn btn-danger"  role="button">Bid Offer </button></a>
+				<a href="DetailsServlet?vinNumber=${carDetail.vinNumber}"><button class="btn btn-primary view-link"  role="button">Bid Offer </button> 	
+			</a>
 				</div>
 				</c:if>
+				
 				</form>
+				<a href="BuyServlet?vinNumber=${carDetail.vinNumber}"><button class="btn btn-primary view-link"  role="button">Buy Now </button></a>
 					<br></br>
-			<a href="BuyServlet?vinNumber=${carDetail.vinNumber}"><button class="btn btn-lg btn btn-danger"  role="button">Buy Now </button></a>	
 				
 			</div>
 			

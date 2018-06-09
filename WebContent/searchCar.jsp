@@ -73,14 +73,14 @@ function googleTranslateElementInit() {
                 <form method="get" action="SearchServlet">
                 
                     <input type="text" class="form-control input-lg" placeholder="Search by Make, Model, Color or Year" name="make" />
-                   
-                        </form>
-         
-                    <span class="input-group-btn">
+                     <span class="input-group-btn">
                          <button class="btn btn-info btn-lg" type="submit">
                             <i class="glyphicon glyphicon-search"></i>
                         </button>
                        </span>
+                        </form>
+         
+                  
                 </div>
             </div>
         </div>
@@ -129,11 +129,9 @@ function googleTranslateElementInit() {
 			<div class="">
 				<a href="BuyServlet?vinNumber=${carDetail.vinNumber}"><button class="btn btn-lg btn btn-danger"  role="button">Buy Now </button></a>	
 				
-				<a href="BuyServlet?vinNumber=${carDetail.vinNumber}"><button class="btn btn-lg btn btn-danger"  role="button">Buy Now </button></a>	
-				
-				
+								
 				<a href="DetailsServlet?vinNumber=${car.vinNumber}"><button class="btn btn-lg btn btn-danger"  role="button">See Details </button></a>
-				
+				<br><br><br><br>
 			</div>
 			<br>
 		</div>
