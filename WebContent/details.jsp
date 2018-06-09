@@ -114,6 +114,9 @@ function googleTranslateElementInit() {
 				</c:if>
 				
 				</form>
+				
+				<!-- Buy Now button needs to be outside of the form. -->
+				
 				<a href="BuyServlet?vinNumber=${carDetail.vinNumber}"><button class="btn btn-primary view-link"  role="button">Buy Now </button></a>
 					<br></br>
 				
